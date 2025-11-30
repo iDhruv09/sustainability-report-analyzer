@@ -1,13 +1,1 @@
-streamlit==1.39.0
-pypdf==4.2.0
-sentence-transformers==2.7.0
-faiss-cpu==1.12.0
-python-dotenv==1.0.1
-pdfplumber==0.11.4
-pandas==2.2.3
-plotly==5.24.1
 
-# 100% compatible LangChain stack for Gemini + init_chat_model
-langchain==0.1.14
-langchain-community==0.0.28
-langchain-google-genai==0.0.9
