@@ -29,10 +29,10 @@ api_key = st.secrets["Google_API_Key"]
 
 
 
-
-llm = ChatGoogleGenerativeAI(
+llm = init_chat_model(
     model="gemini-2.5-pro",
-    api_key=api_key,
+    model_provider="google_genai",
+    google_api_key=api_key
 )
 
 
@@ -464,6 +464,7 @@ with tab3:
             elif chart_type == "Histogram":
                 fig = px.histogram(df, x=numeric_cols[0])
                 st.plotly_chart(fig)
+
 
 
 
