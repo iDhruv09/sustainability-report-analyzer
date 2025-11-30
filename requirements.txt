@@ -1,0 +1,16 @@
+streamlit==1.39.0
+pypdf==4.2.0
+sentence-transformers==2.7.0
+faiss-cpu==1.8.0
+numpy==1.26.4
+openai==1.52.0
+python-dotenv==1.0.1
+requests==2.32.3
+tqdm==4.66.4
+
+# Optional but recommended for your RAG & embeddings
+torch==2.2.2
+transformers==4.44.2
+
+# Optional for good practice (not mandatory)
+protobuf==4.25.3
