@@ -1,16 +1,11 @@
 streamlit==1.39.0
 pypdf==4.2.0
 sentence-transformers==2.7.0
-faiss-cpu==1.8.0
-numpy==1.26.4
-openai==1.52.0
+faiss-cpu==1.12.0
+langchain==0.3.12
+langchain-community==0.3.12
+langchain-google-genai==1.0.7
 python-dotenv==1.0.1
-requests==2.32.3
-tqdm==4.66.4
-
-# Optional but recommended for your RAG & embeddings
-torch==2.2.2
-transformers==4.44.2
-
-# Optional for good practice (not mandatory)
-protobuf==4.25.3
+pdfplumber==0.11.4
+pandas==2.2.3
+plotly==5.24.1
