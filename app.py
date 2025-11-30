@@ -9,7 +9,8 @@ import streamlit as st
 from pypdf import PdfReader
 from sentence_transformers import SentenceTransformer
 import faiss
-from langchain.chat_models import init_chat_model
+from langchain_google_genai import ChatGoogleGenerativeAI
+
 from dotenv import load_dotenv, find_dotenv
 import re
 import os
@@ -26,11 +27,11 @@ api_key=os.environ["Google_API_Key"]
 
 
 
-llm = init_chat_model(
+llm = ChatGoogleGenerativeAI(
     model="gemini-2.5-pro",
-    model_provider="google_genai",
-    api_key=api_key
+    api_key=api_key,
 )
+
 
 def call_llm(system_prompt, user_prompt):
     """Unified Gemini API call"""
@@ -460,4 +461,5 @@ with tab3:
             elif chart_type == "Histogram":
                 fig = px.histogram(df, x=numeric_cols[0])
                 st.plotly_chart(fig)
+
 
