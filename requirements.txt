@@ -2,10 +2,12 @@ streamlit==1.39.0
 pypdf==4.2.0
 sentence-transformers==2.7.0
 faiss-cpu==1.12.0
-langchain==0.3.12
-langchain-community==0.3.12
-langchain-google-genai==1.0.7
 python-dotenv==1.0.1
 pdfplumber==0.11.4
 pandas==2.2.3
 plotly==5.24.1
+
+# REQUIRED VERSIONS FOR GEMINI + LANGCHAIN
+langchain==0.0.352
+langchain-community==0.0.21
+langchain-google-genai==0.0.6
