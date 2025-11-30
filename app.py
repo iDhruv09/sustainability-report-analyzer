@@ -23,7 +23,7 @@ import plotly.express as px
 # LOAD ENV + INITIALIZE GEMINI LLM
 # -------------------------------------------------------
 
-api_key = st.secrets["Google_API_Key"]
+
 load_dotenv(find_dotenv(r"C:\AIDTM\Trimester - 2\GenAI\GenAI Assignment\dotenvKey.env"))
 api_key=os.environ["Google_API_Key"]
 
@@ -465,6 +465,7 @@ with tab3:
             elif chart_type == "Histogram":
                 fig = px.histogram(df, x=numeric_cols[0])
                 st.plotly_chart(fig)
+
 
 
 
