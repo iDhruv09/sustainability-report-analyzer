@@ -1,5 +1,3 @@
-python_version == "3.10.*"
-
 streamlit==1.39.0
 pypdf==4.2.0
 sentence-transformers==2.7.0
