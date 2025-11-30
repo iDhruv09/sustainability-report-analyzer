@@ -7,7 +7,7 @@ pdfplumber==0.11.4
 pandas==2.2.3
 plotly==5.24.1
 
-# REQUIRED VERSIONS FOR GEMINI + LANGCHAIN
-langchain==0.0.352
-langchain-community==0.0.21
-langchain-google-genai==0.0.6
+# --- LangChain that works on Streamlit Cloud + Gemini ---
+langchain==0.1.14
+langchain-community==0.0.28
+langchain-google-genai==0.0.9
